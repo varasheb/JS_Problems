@@ -17,11 +17,22 @@
 
 function freeTimeSlotCalculator(timeSlot){
     let n=timeSlot.length
-    for(let i=0;i<n;i++){
-        
+    timeSlot.sort((a,b)=>a[0]-b[0])
+    let result=[]
+ 
+    for(let i=0;i<n-1;i++){
+        if(i==0 && timeSlot[0][0]>0){
+            result.push([0,timeSlot[0][0]])
+        }
+        if(timeSlot[i][1]<timeSlot[i+1][0]){
+         result.push([timeSlot[i][1],timeSlot[i+1][0]])
+        }
+        if(i==n-2 && timeSlot[n-1][1]<24){
+            result.push([timeSlot[n-1][1],24])
+        }
     }
-console.log(timeSlot);
-return[]
+   
+return result
 }
 
-console.log(freeTimeSlotCalculator([[10, 12], [14, 15], [16, 20]]));
+console.log(freeTimeSlotCalculator([[14, 15],[10, 12], [16, 20]]));
