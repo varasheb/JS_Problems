@@ -1,20 +1,3 @@
-/**
- * 11. Reverse Polish Notation (PostFix)
-Write a function to calculate reverse polish notations or postfix notation. In reverse Polish
-notation, the operators follow their operands; for instance, to add 3 and 4 together, one would
-write 3 4 + rather than 3 + 4. If there are multiple operations, operators are given immediately
-after their second operands, so the expression written 3 - 4+5 in conventional notation would be
-written 3 4 - 5 + in reverse polish notation.
-Note : You can consider only simple binary operators(+,-,*,/) for this question and no
-parenthesis and functions in your input
-3 4 + means 4+4
-3 5 + 7 2 means (3+5)*(7-2)
-3 4 + 5 * means (3+4)* 5
-Function calculateRPN(exp){
-—------------
-—----------
-}
- */
 
 
 function calculateRPN(exp){

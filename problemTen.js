@@ -1,13 +1,3 @@
-/**
- * 
- * 10. Permutations of a string
-Write a program to find all permutations of a given string using recursion.
-For Example, given a string “XYZ”, this program will print all 6 possible permutations of
-Input : “XYZ”
-Output : Array of strings [“XYZ”,”XZY”,”ZYX”,”ZXY”,”YXZ”,”YZX”]
-
- */
-
 
 function getPermutations(str) {
     function permute(s) {

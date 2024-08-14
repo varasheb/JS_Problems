@@ -1,13 +1,3 @@
-/*
-9. Longest common Prefix
-Write a program to find the longest common prefix among all the input string. So the longest
-common prefix in the below example will be “intelli” as all the above strings in the array start
-with “intelli”.( Your Program should work for any input, not just the one given in
-example)
-Example 1:
-Input: [“intelliBlue”,”intelliFeeder”,”intelliAuth”]
-Output: longest prefix = “intelli”
-*/
 
 function findLongestPrefix(strs) {
     if (!strs || strs.length === 0) {

@@ -1,27 +1,3 @@
-/*
-13. Convert Binary Search Tree to Linked List in Ascending order
-Given any Binary Search Tree with a pointer to the root node and a given node structure.
-Write a function in either C / Java / Javascript / Python to convert the Binary Search Tree to
-Linked List in such a way that the values of the linked list nodes are arranged in ascending
-order. Consider the structure of each node as below.
-struct tree_node{
-struct val;
-struct node* left_child;
-struct node* right_child;
-}
-struct list_node{
-struct node* val;
-struct node* next;
-}
-Your function signature:
-struct list_node* convert_to_linked_list(struct tree_node* bst){
-—---
-return list_head;
-—---
-}
-*/
-//create a bst tree with a pointer to the root node
-//create a linked list with a pointer to the root node
 
 class Node{
     constructor(val){

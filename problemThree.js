@@ -1,19 +1,3 @@
-// 3. The vending
-// machine
-// Write a program to calculate the change returned by a vending machine
-// when you buy something from it. The coins are numbered by their value in
-// paise.
-// [1, 5, 10, 25, 50, 100]
-// 1 being 1 paise & 100 being 100 paise or 1 Rupee.
-// If a person inserted 5 Rs and bought something worth 2.99 Rs then he would get one 1 paise join
-// & two 100 paise coins. So the answer will be.
-// [1, 0,0, 0, 0, 2]
-// Complete the following function
-// function getChange(price_of_item. money_given_to_purchase) {
-// write code here
-// return change
-// return [0, 0, 0, 0, 0, 0]
-// }
 
 function getChange(itemPrice, moneyGiven) {
     let priceInPaise = Math.round(itemPrice * 100);
